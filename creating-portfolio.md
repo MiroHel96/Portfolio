@@ -10,6 +10,18 @@ This document can be used for reference, when building your own portfolio. This 
 
 2. Hosting a server from Upcloud
 
+3. DNS records and domain name which points to your server (Name Cheap)
+
+
+## Virtual Machine
+
+I had already installed virutal machine to my pc. My main purpose Is to use it to control my Upcloud server. The virtul machine was used to generate SSH-key for Upcloud. 
+Instructions for SSH-key generation can be found from here: [Generate SSH key](https://www.ssh.com/academy/ssh/keygen**).
+
+
+
+## Hosting a server from Upcloud
+
 I will be creating a simple portfolio, therefore I do not need great amount of power for the server. 
 The following specs should be more than enough, I can later scale my server if needed.
 
@@ -28,7 +40,8 @@ Tecnical Specs:
 
 <img width="886" height="1216" alt="image" src="https://github.com/user-attachments/assets/5905da38-b1e1-42e0-9ab4-d4456132de68" />
 
+<img width="869" height="632" alt="image" src="https://github.com/user-attachments/assets/ee8f14f5-1e50-4f13-a04a-b67f6e8050b1" />
 
-3. DNS records and domain name which points to your server (Name Cheap)
+<img width="834" height="403" alt="image" src="https://github.com/user-attachments/assets/f3318121-f899-4f1d-a6fb-5ef358ba6c9c" />
 
-   
+## Dns records and domain name 
