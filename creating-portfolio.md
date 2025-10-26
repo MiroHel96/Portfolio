@@ -10,7 +10,15 @@ This document can be used for reference, when building your own portfolio. This 
 
 2. Hosting a server from Upcloud
 
-3. DNS records and domain name which points to your server (Name Cheap)
+3. Securing Server and opening ports
+   - Install UFW
+   - Lock root
+
+4. Installing Apache2 to Linux
+
+5. DNS records and domain name which points to your server (Name Cheap)
+
+6. Creating a virtual host to show my website.
 
 
 ## Virtual Machine
@@ -18,7 +26,7 @@ This document can be used for reference, when building your own portfolio. This 
 I had already installed virutal machine to my pc. My main purpose Is to use it to control my Upcloud server. The virtul machine was used to generate SSH-key for Upcloud. 
 Instructions for SSH-key generation can be found from here: [Generate SSH key](https://www.ssh.com/academy/ssh/keygen**).
 
-
+After generating SSH-key I could set it for UpCloud and securely remote login in to my server. 
 
 ## Hosting a server from Upcloud
 
@@ -43,5 +51,16 @@ Tecnical Specs:
 <img width="869" height="632" alt="image" src="https://github.com/user-attachments/assets/ee8f14f5-1e50-4f13-a04a-b67f6e8050b1" />
 
 <img width="834" height="403" alt="image" src="https://github.com/user-attachments/assets/f3318121-f899-4f1d-a6fb-5ef358ba6c9c" />
+
+## Securing Server 
+
+After generating SSH-key and successfully connecting to my server I installed the following packets to make my live a bit easier: 
+- `micro`
+- `bash-completion`
+- `openssh-client`
+- `wget`
+- `curl`
+- `ufw`
+
 
 ## Dns records and domain name 
