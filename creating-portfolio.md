@@ -62,6 +62,59 @@ After generating SSH-key and successfully connecting to my server I installed th
 - `curl`
 - `ufw`
 
+## Bash -script for securing server 
+
+I created this script to harden Linux server with the help of MicrosoftCopilot. Quite convinient, you skip a lot of manual writing with this and I think these are really helpfull after error checking and testing them. 
+```
+#!/bin/bash
+
+# Exit on error
+set -e
+
+echo "Starting server hardening..."
+
+# 1. Update system
+echo "Updating packages..."
+apt update && apt upgrade -y
+
+# 2. Enable automatic security updates
+echo "Enabling unattended upgrades..."
+apt install -y unattended-upgrades
+dpkg-reconfigure -plow unattended-upgrades
+
+# 3. Lock root account
+echo "Locking root account..."
+passwd -l root
+
+# 4. Configure UFW
+echo "Configuring UFW firewall..."
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow ssh
+ufw allow http
+ufw allow https
+ufw enable
+
+# 5. Disable password authentication for SSH
+echo "Disabling SSH password login..."
+sed -i 's/^#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+sed -i 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
+systemctl restart sshd
+
+# 6. Install and configure fail2ban
+echo "Installing fail2ban..."
+apt install -y fail2ban
+systemctl enable fail2ban
+systemctl start fail2ban
+
+# 7. Remove unused packages
+echo "Cleaning up unused packages..."
+apt autoremove -y
+
+echo "✅ Server hardening complete!"
+
+```
+
 ### Locking root account 
 
 I used the following website for reference [Terokarvinen.com - Linux Palvelimet 2025 Syksy](https://terokarvinen.com/linux-palvelimet/#h6-salataampa).
