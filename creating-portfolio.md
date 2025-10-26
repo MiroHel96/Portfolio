@@ -1,0 +1,34 @@
+# My personal portfolio
+
+## In this file I document basic steps for my portfolio. 
+
+This document can be used for reference, when building your own portfolio. This document is not meant to be a tutorial. It is reference for myself if I need to change anything or come back to check what I have done previously.
+
+### Table of contents
+
+1. Virtual Machine (Optional)
+
+2. Hosting a server from Upcloud
+
+I will be creating a simple portfolio, therefore I do not need great amount of power for the server. 
+The following specs should be more than enough, I can later scale my server if needed.
+
+Tecnical Specs:
+- Location `Helsinki`
+- Plan includes `1 core CPU`, `1GB of Memory`and `20GB of Storage`
+- Backups `Not included`, I will make physical copy and store other backup to cloud.
+- Operating system `Linux`, best for hosting due to minimal resource needs.
+- Network use public IP addresses
+- Login Method `SSH`, for security reasons
+- Hostname and Servernames, for security purposes not included in document.
+
+<img width="1193" height="963" alt="image" src="https://github.com/user-attachments/assets/8e3db832-a3d8-444c-8372-57afa51a2ff3" />
+
+<img width="851" height="732" alt="image" src="https://github.com/user-attachments/assets/fdc933dd-17cc-4655-838a-6b7deba3da4e" />
+
+<img width="886" height="1216" alt="image" src="https://github.com/user-attachments/assets/5905da38-b1e1-42e0-9ab4-d4456132de68" />
+
+
+3. DNS records and domain name which points to your server (Name Cheap)
+
+   
