@@ -62,5 +62,13 @@ After generating SSH-key and successfully connecting to my server I installed th
 - `curl`
 - `ufw`
 
+### Locking root account 
+
+I used the following website for reference [Terokarvinen.com - Linux Palvelimet 2025 Syksy](https://terokarvinen.com/linux-palvelimet/#h6-salataampa).
+
+Next I created new user `miro` using `sudo adduser miro`, added it to the sudoers group with command `sudo adduser miro sudo`. Next I copied root -user settings to my account and modified files permissions with commands `sudo chown -R miro:miro /home/miro/`
+
+After Creating the account I tested connetion and sudo permissions with my main account. Everything worked, I contuinued to lock root user so it could not be exploited. I used the following commands `sudo usermod --lock root` and `sudo mv -nv /root/DISABLED-ssh/`.
+
 
 ## Dns records and domain name 
