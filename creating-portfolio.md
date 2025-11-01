@@ -123,5 +123,18 @@ Next I created new user `miro` using `sudo adduser miro`, added it to the sudoer
 
 After Creating the account I tested connetion and sudo permissions with my main account. Everything worked, I contuinued to lock root user so it could not be exploited. I used the following commands `sudo usermod --lock root` and `sudo mv -nv /root/DISABLED-ssh/`.
 
+## Installing Apache2 serice to Linux Server
+
+In this part I install Apache2 service for my server. I will use it to host my portfolio. 
+
+I connected to my server using SSH and entered the following command in the terminal: `sudo apt install apache 2`.
+
+<img width="1800" height="320" alt="image" src="https://github.com/user-attachments/assets/5e533512-62ce-4959-b50f-71693e0a8120" />
+
+After succesfully installing Apache2 service to my linux I verified its status with command `systemctl status apache2`
+
+
+## Creating a TLS Certificate with Let's Encrypt
+
 
 ## Dns records and domain name 
