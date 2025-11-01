@@ -142,6 +142,15 @@ Next I installed certbot TLS certificate to my server. I used command `sudo apt 
 
 I first need to make my domain point to my server before creating a certification. After doing this I used the command `sudo certbot --apache` to generate certificate. 
 
+<img width="1336" height="92" alt="image" src="https://github.com/user-attachments/assets/8c218e9a-c2aa-457a-95e4-d19afd96b39c" />
 
 
 ## Dns records and domain name 
+
+I created A record with my server's IP Address and CNAME record for my domain `www.mirohelenius.com`. Next I have to create my portfolio and deploy it to my server. 
+
+
+## Creating a virtual host in Apache2 server and deploying your own website 
+
+
+## Upgrades to security and more
