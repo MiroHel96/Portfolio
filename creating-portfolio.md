@@ -136,5 +136,12 @@ After succesfully installing Apache2 service to my linux I verified its status w
 
 ## Creating a TLS Certificate with Let's Encrypt
 
+Next I installed certbot TLS certificate to my server. I used command `sudo apt install certbot python3-certbot-apche`. 
+
+<img width="1620" height="378" alt="image" src="https://github.com/user-attachments/assets/ab10ad4e-377b-4dd3-ae21-d1883cda6fd9" />
+
+I first need to make my domain point to my server before creating a certification. After doing this I used the command `sudo certbot --apache` to generate certificate. 
+
+
 
 ## Dns records and domain name 
